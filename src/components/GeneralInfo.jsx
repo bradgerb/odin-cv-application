@@ -1,3 +1,5 @@
+// import { useState } from "react";
+
 const generalInfoArray = [{
     id: 0,
     question: 'What is your name?',
@@ -12,15 +14,25 @@ const generalInfoArray = [{
     tag: 'phone'
 }];
 
+
+
 export default function GeneralInfo() {
+    // const [displayState, setDisplayState] = useState('default');
+
+    function handleSubmitClick() {
+        console.log('here');
+    }
+
     const listItems = generalInfoArray.map(array =>
     <li key={array.id}>
-        <form method="get">
+        <form>
             <label>
                 {array.question}
             </label>
             <input type="text" />
-            <button>Submit</button>
+            <button onClick={handleSubmitClick}>
+                Submit
+            </button>
         </form>
         <br></br>
     </li>);

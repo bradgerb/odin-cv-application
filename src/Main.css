@@ -37,10 +37,30 @@ body {
 
 .display {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 10vh 5%;
-  padding: 40vh 40%;
+  align-self: center;
+  margin: 10vh 10vw;
+  width: 40vw;
+  height: 80vh;
   background-color: white;
+}
+
+.generalInfoDisplay, .educationDisplay {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    border-bottom: 3px solid black;
+}
+
+.practicalDisplay {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.generalInfoDisplay{
+    border-bottom: 3px solid black;
 }
 
 ul {
