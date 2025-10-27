@@ -15,6 +15,7 @@ body {
 .generalInfo {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   border-bottom: 3px solid black;
 }
@@ -37,7 +38,11 @@ body {
 .display {
   display: flex;
   justify-content: center;
-  margin: 10% 5%;
-  padding: 80% 40%;
+  margin: 10vh 5%;
+  padding: 40vh 40%;
   background-color: white;
+}
+
+ul {
+  list-style: none;
 }

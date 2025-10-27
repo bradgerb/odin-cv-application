@@ -1,8 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './App.css'
-import App from './App.jsx'
-import Name from './components/GeneralInfo.jsx'
+import './Main.css'
+import GeneralInfo from './components/GeneralInfo.jsx'
 import Education from './components/EducationExperience.jsx'
 import Practical from './components/PracticalExperience.jsx'
 
@@ -10,7 +9,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 
   <div className="generalInfo">
-    <Name />
+    <GeneralInfo />
   </div>
   <div className="educationExp">
     <Education />
