@@ -7,12 +7,15 @@ export default function App() {
     return (
         <>
             <div className="generalInfo">
-                <GeneralInfo />
+                <h1>General Information</h1>
+                <GeneralInfo />  
             </div>
             <div className="educationExp">
+                <h1>Education Information</h1>
                 <Education />
             </div>
             <div className="practicalExp">
+                <h1>Practical Information</h1>
                 <Practical />
             </div>
             <div className="displayContainer">

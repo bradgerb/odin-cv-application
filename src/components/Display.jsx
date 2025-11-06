@@ -1,9 +1,18 @@
+// import { useState } from "react";
+
 function Display() {
+
+    // const [nameValue, setNameValue] = useState('')
+
     return (
         <div className="display">
             <div className='generalInfoDisplay'>
                 <h1>General Information:</h1>
-                <div>Name:</div>
+                {/* <div>Name: {nameValue}</div> */}
+                <br />
+                <div>Email:</div>
+                <br />
+                <div>Phone:</div>
             </div>
             <div className="educationDisplay">
                 <h1>Education Information:</h1>

@@ -1,5 +1,5 @@
 function Practical() {
-    return <h1>What was your previous job</h1>
+    return <div>What was your previous job</div>
 }
 
 export default Practical;
