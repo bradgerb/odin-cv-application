@@ -14,8 +14,6 @@ const generalInfoArray = [{
     tag: 'phone'
 }];
 
-
-
 export default function GeneralInfo() {
     const [nameState, setNameState] = useState('Bob');
 

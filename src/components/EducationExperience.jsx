@@ -1,32 +1,56 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-function Education() {
-    // return <h1>List your education</h1>
+export default function Education() {
+    const [schoolName, setSchoolName] = useState('');
+    const [degree, setDegree] = useState('');
+    const [gpa, setGpa] = useState('');
 
+    function handleSetSchoolName(e) {
+      setSchoolName(e.target.value);
+    }
 
-  const [isSent, setIsSent] = useState(false);
-  const [message, setMessage] = useState('');
+    function handleSetDegree(e) {
+      setDegree(e.target.value);
+    }
 
-  if (isSent) {
-    return <h1>Thank you!</h1>;
-  } else {
-    return (
-      <form onSubmit={e => {
-        e.preventDefault();
-        alert(`Sending: "${message}"`);
-        setIsSent(true);
-      }}>
-        <textarea
-          placeholder="Message"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-        />
+    function handleSetGpa(e) {
+      setGpa(e.target.value);
+    }
+
+    return (<>
+        <form>
+            <label>Where did you attend school?</label>
+            <input
+            type="text"
+            value={schoolName}
+            onChange={handleSetSchoolName}
+            />
+          </form>
+          <div>{schoolName}</div>
+
         <br />
-        <button type="submit">Send</button>
-      </form>
-    );
-  }
+        
+          <form>
+            <label>What was your degree?</label>
+            <input
+            type="text"
+            value={degree}
+            onChange={handleSetDegree}
+            />
+          </form>
+          <div>{degree}</div>
 
+          <br />
+
+          <form>
+            <label>What was your gpa?</label>
+            <input
+            type="number"
+            value={gpa}
+            onChange={handleSetGpa}
+            />
+          </form>
+          <div>{gpa}</div>
+      </>
+    )
 }
-
-export default Education;

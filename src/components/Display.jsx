@@ -1,14 +1,9 @@
-// import { useState } from "react";
-
 function Display() {
-
-    // const [nameValue, setNameValue] = useState('')
-
     return (
         <div className="display">
             <div className='generalInfoDisplay'>
                 <h1>General Information:</h1>
-                {/* <div>Name: {nameValue}</div> */}
+                <div>Name:</div>
                 <br />
                 <div>Email:</div>
                 <br />
