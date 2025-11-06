@@ -4,15 +4,26 @@ function Practical() {
     // return <div>What was your previous job</div>
 
   const [isSent, setIsSent] = useState(false);
-  const [message, setMessage] = useState('this is the default message');
+  const [message, setMessage] = useState('Add anything else you think is helpful');
+
+  function handleEdit() {
+    setIsSent(false);
+  }
 
   if (isSent) {
-    return <h1>Thank you!</h1>;
+    return (
+        <>
+            <div>{message}</div>
+            <button onClick={handleEdit}>Edit</button>
+            {/* onClick={setIsSent(false)} */}
+        </>
+    )
+
   } else {
     return (
       <form onSubmit={e => {
         e.preventDefault();
-        alert(`Sending: "${message}"`);
+        // alert(`Sending: "${message}"`);
         setIsSent(true);
       }}>
         <textarea
