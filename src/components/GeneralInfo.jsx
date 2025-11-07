@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const generalInfoArray = [{
     id: 0,
@@ -15,7 +15,15 @@ const generalInfoArray = [{
 }];
 
 export default function GeneralInfo() {
-    const [nameState, setNameState] = useState('Bob');
+
+    // const [nameState, setNameState] = useState('')
+    // const [emailState, setEmailState] = useState('')
+    // const [phoneState, setPhoneState] = useState('')
+
+    function handleSubmit(e) {
+        // e.preventDefault();
+        console.log(e.target.value)
+    }
 
     const listItems = generalInfoArray.map(array =>
     <li key={array.id}>
@@ -26,10 +34,9 @@ export default function GeneralInfo() {
                 {array.question}
             </label>
             <input type="text" />
-            <button onClick={e => setNameState(e.target.value)}>
+            <button onClick={e => handleSubmit(e.target.value)}>
                 Submit
             </button>
-            {nameState}
         </form>
         <br></br>
     </li>);

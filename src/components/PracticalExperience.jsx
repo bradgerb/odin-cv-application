@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
 function Practical() {
-    // return <div>What was your previous job</div>
-
   const [isSent, setIsSent] = useState(false);
   const [message, setMessage] = useState('Add anything else you think is helpful');
 
@@ -15,7 +13,6 @@ function Practical() {
         <>
             <div>{message}</div>
             <button onClick={handleEdit}>Edit</button>
-            {/* onClick={setIsSent(false)} */}
         </>
     )
 
@@ -36,7 +33,6 @@ function Practical() {
       </form>
     );
   }
-
 }
 
 export default Practical;
