@@ -17,3 +17,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 This project will test my ability to use React by creating a simple resume generator.
+
+I stopped messing with the display when I realized passing information to other components would likely come up later. Couldn't quite get mapping to work with form submission, but the other two methods I used work. 
