@@ -8,6 +8,7 @@ export default function App() {
         <>
             <div className="generalInfo">
                 <h1>General Information</h1>
+                <div>section broken</div>
                 <GeneralInfo />  
             </div>
             <div className="educationExp">
@@ -19,6 +20,7 @@ export default function App() {
                 <Practical />
             </div>
             <div className="displayContainer">
+                section not functional
                 <Display />
             </div>
         </>
